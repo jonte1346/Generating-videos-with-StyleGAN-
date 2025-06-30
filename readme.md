@@ -10,8 +10,11 @@ This small playground demonstrates how to:
 
 ## Quick look
 
-The two images above are the very first faces produced from seeds **0** and **1**.  The latent walk between them is available as `media/interpolation_seed0‑seed1.mp4`.
-
+The two images above are the very first faces produced from seeds **0** and **1**.  The latent walk between them is available as `media/animatedVideo_256x256.mp4`.
+<p align="center">
+  <img src="media/face1.png" width="256" alt="Random face 0">
+  <img src="media/face2.png" width="256" alt="Random face 1">
+</p>
 ---
 
 ## How it works
