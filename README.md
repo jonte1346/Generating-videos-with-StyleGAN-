@@ -1,1 +1,0 @@
-# Generating-videos-with-StyleGAN-
