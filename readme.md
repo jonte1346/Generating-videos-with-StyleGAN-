@@ -30,9 +30,9 @@ The latent walk between two actors is available here:
 
 ## How it works
 
-> All the heavy lifting is done by [StyleGAN‑3](https://github.com/NVlabs/stylegan3), [StyleGAN‑2](https://github.com/NVlabs/stylegan2) and [pixel2style2pixel (pSp)](https://github.com/eladrich/pixel2style2pixel).  This repo just wires them together in a reproducible way.
+> All the heavy lifting is done by [StyleGAN‑3](https://github.com/NVlabs/stylegan3), [StyleGAN‑2](https://github.com/NVlabs/stylegan2) and [pixel2style2pixel (pSp)](https://github.com/eladrich/pixel2style2pixel).  This just wires them together in a reproducible way.
 
-### 1. Set‑up the generator
+### 1. Set‑up of the generator
 
 ```python
 # load StyleGAN‑3 FFHQ 256×256 (t configuration)
