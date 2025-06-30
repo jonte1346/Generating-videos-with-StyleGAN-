@@ -10,11 +10,22 @@ This small playground demonstrates how to:
 
 ## Quick look
 
-The two images above are the very first faces produced from seeds **0** and **1**.  The latent walk between them is available as `media/animatedVideo_256x256.mp4`.
+The two images above are the very first faces produced from seeds **0** and **1**.  
 <p align="center">
   <img src="media/face1.png" width="256" alt="Random face 0">
   <img src="media/face2.png" width="256" alt="Random face 1">
 </p>
+
+The latent walk between them is available here:
+<p align="center">
+<img src="media/animatedVideo_256x256.gif" width="256" alt="Latent interpolation animation">
+</p>
+
+The latent walk between two actors is available here:
+<p align="center">
+<img src="media/animatedActorsVideo.gif" width="256" alt="Latent interpolation animation Actors">
+</p>
+
 ---
 
 ## How it works
