@@ -58,50 +58,9 @@ latents_w_plus = psp(preprocess(image))  # shape [1, 18, 512]
 
 ---
 
-## Directory structure
-
-```
-.
-├─ models/                      # *.pkl, *.pt
-├─ notebooks/                  # play‑around Jupyter files
-├─ src/
-│  ├─ generate.py              # entry‑point for random faces & interpolation
-│  └─ encode.py                # pSp wrapper
-├─ media/
-│  ├─ seed_000.png             # 1st random face (seed 0)
-│  ├─ seed_001.png             # 2nd random face (seed 1)
-│  ├─ interpolation_seed0‑seed1.mp4
-│  └─ psp_interpolation.mp4
-└─ README.md
-```
-
----
 
 ## Running the demo
 
-```bash
-# Create a virtual environment (optional but recommended)
-python -m venv .venv && source .venv/bin/activate
-
-# Install requirements
-pip install -r requirements.txt
-
-# 1️⃣  Generate two faces & their interpolation
-python src/generate.py --seeds 0 1 --outdir media/
-
-# 2️⃣  Encode a real face (expects input.jpg in cwd)
-python src/encode.py --input input.jpg --outdir media/
-```
-
 Checkout the freshly saved MP4s or open the notebooks for a step‑by‑step walkthrough.
 
----
-
-## Notes & Tips
-
-- **Choosing seeds** – explore different seeds (`--seeds 42 1337` etc.) for variety.  The process is repeatable as long as the seed stays the same.
-- **W vs. W⁺** – interpolating in W gives globally smooth transitions, while W⁺ allows layer‑wise control but may introduce artefacts if blended aggressively.
-- **Troubleshooting CUDA** – if you see *CUBLAS\_STATUS\_NOT\_INITIALIZED*, set `export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128`.
-
-Have fun exploring the latent space! 🎉
 
